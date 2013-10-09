@@ -1,4 +1,4 @@
-BSLModuleSDK
+bsl-sdk
 ============
 
-变色龙客户端本地模块开发SDK
+sdk for native module development
