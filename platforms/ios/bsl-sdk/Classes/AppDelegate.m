@@ -26,6 +26,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BSLApplication.h"
 #import "MainViewController.h"
 
 #import <Cordova/CDVPlugin.h>
@@ -87,8 +88,31 @@
 
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    // init BSLModuleManager
+    [[BSLApplication sharedApplication] application:application didFinishLaunchingWithOptions:launchOptions];
 
     return YES;
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    [[BSLApplication sharedApplication] applicationDidBecomeActive:application];
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    [[BSLApplication sharedApplication] applicationWillResignActive:application];
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    [[BSLApplication sharedApplication] applicationDidEnterBackground:application];
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    [[BSLApplication sharedApplication] applicationWillEnterForeground:application];
 }
 
 // this happens while we are running ( in the background, or from within our own app )

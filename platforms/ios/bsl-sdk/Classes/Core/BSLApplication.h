@@ -17,7 +17,7 @@
 @interface BSLApplication : NSObject<UIApplicationDelegate>
 @property(nonatomic, weak)UIApplication *uiApplication;
 
-+(BSLApplication *)sharedManager;
++(BSLApplication *)sharedApplication;
 //register a service instance
 -(void)registerService:(id)service WithIdentifier:(NSString*)identifier;
 //obtain a service

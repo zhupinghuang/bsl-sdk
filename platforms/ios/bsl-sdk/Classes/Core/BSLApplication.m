@@ -38,13 +38,13 @@
         NSURL *configURL = [[NSBundle mainBundle] URLForResource:@"bsl" withExtension:@"json"];
         NSData *configData = [NSData dataWithContentsOfURL:configURL];
         id configJSON = [configData objectFromJSONData];
-        NSArray *modulesJSON = [configJSON arrayForKey:@"modules"];
+        NSArray *modulesJSON = [configJSON objectForKey:@"modules"];
         for (id moduleJSON in modulesJSON) {
-            NSString *moduleName = [moduleJSON stringForKey:@"name"];
+            NSString *moduleName = [moduleJSON objectForKey:@"name"];
             Class moduleClass = NSClassFromString(moduleName);
             BSLModule *m = [[moduleClass alloc] init];
             if (m != nil) {
-                m.identifier = [moduleJSON stringForKey:@"identifier"];
+                m.identifier = [moduleJSON objectForKey:@"identifier"];
                 [self.moduleDictionary setValue:m forKey:m.identifier];
             } else {
                 NSLog(@"%@ not exists.", moduleName);
@@ -55,7 +55,7 @@
     return self;
 }
 
-+(BSLApplication *)sharedManager
++(BSLApplication *)sharedApplication
 {
     static BSLApplication *sharedInstance = nil;
     static dispatch_once_t onceToken;
@@ -74,11 +74,55 @@
     
     NSArray *allModules = [self.moduleDictionary allValues];
     for (BSLModule *m in allModules) {
-        [m application:self didFinishLaunchingWithOptions:launchOptions];
+        if ([m respondsToSelector:@selector(application:didFinishLaunchingWithOptions:)]) {
+            [m application:self didFinishLaunchingWithOptions:launchOptions];
+        }
     }
     
     return YES;
 }
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    NSArray *allModules = [self.moduleDictionary allValues];
+    for (BSLModule *m in allModules) {
+        if ([m respondsToSelector:@selector(applicationDidBecomeActive:)]) {
+            [m applicationDidBecomeActive:application];
+        }
+    }
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    NSArray *allModules = [self.moduleDictionary allValues];
+    for (BSLModule *m in allModules) {
+        if ([m respondsToSelector:@selector(applicationWillResignActive:)]) {
+            [m applicationWillResignActive:application];
+        }
+    }
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    NSArray *allModules = [self.moduleDictionary allValues];
+    for (BSLModule *m in allModules) {
+        if ([m respondsToSelector:@selector(applicationDidEnterBackground:)]) {
+            [m applicationDidEnterBackground:application];
+        }
+    }
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    NSArray *allModules = [self.moduleDictionary allValues];
+    for (BSLModule *m in allModules) {
+        if ([m respondsToSelector:@selector(applicationWillEnterForeground:)]) {
+            [m applicationWillEnterForeground:application];
+        }
+    }
+}
+
+
 
 #pragma mark - Provider methods
 
