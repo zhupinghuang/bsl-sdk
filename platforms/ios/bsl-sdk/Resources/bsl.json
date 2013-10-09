@@ -1,0 +1,8 @@
+{
+    "version" : 1.0,
+    "modules" : [
+    {"identifier":"com.foreveross.bsl.im", "name": "IMModule"},
+    {"identifier":"mocha.location", "name": "LocationModule"},
+    {"identifier":"mocha.share", "name": "ShareModule"}
+    ]
+}

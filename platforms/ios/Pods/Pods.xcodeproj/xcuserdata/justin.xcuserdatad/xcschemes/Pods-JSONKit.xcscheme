@@ -13,9 +13,9 @@
             buildForArchiving = "YES"
             buildForProfiling = "YES">
             <BuildableReference
-               BlueprintName = "Pods-Reachability"
-               BlueprintIdentifier = "5E942278C27048FDAEEDFDF0"
-               BuildableName = "libPods-Reachability.a"
+               BlueprintName = "Pods-JSONKit"
+               BlueprintIdentifier = "B44D59389A1141C8ABC8221A"
+               BuildableName = "libPods-JSONKit.a"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableIdentifier = "primary">
             </BuildableReference>
