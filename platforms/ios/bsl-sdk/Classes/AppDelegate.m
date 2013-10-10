@@ -28,6 +28,7 @@
 #import "AppDelegate.h"
 #import "BSLApplication.h"
 #import "MainViewController.h"
+#import "ModulesViewController.h"
 
 #import <Cordova/CDVPlugin.h>
 
@@ -75,6 +76,10 @@
 
 #if __has_feature(objc_arc)
         self.viewController = [[MainViewController alloc] init];
+    
+    ModulesViewController *mvc = [[ModulesViewController alloc] init];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:mvc];
+    self.viewController = nc;
 #else
         self.viewController = [[[MainViewController alloc] init] autorelease];
 #endif
@@ -125,7 +130,9 @@
 
     // calls into javascript global function 'handleOpenURL'
     NSString* jsString = [NSString stringWithFormat:@"handleOpenURL(\"%@\");", url];
-    [self.viewController.webView stringByEvaluatingJavaScriptFromString:jsString];
+    if ([self.viewController isMemberOfClass:[CDVViewController class]]) {
+        [[(CDVViewController*)self.viewController webView] stringByEvaluatingJavaScriptFromString:jsString];
+    }
 
     // all plugins will get the notification, and their handlers will be called
     [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:CDVPluginHandleOpenURLNotification object:url]];

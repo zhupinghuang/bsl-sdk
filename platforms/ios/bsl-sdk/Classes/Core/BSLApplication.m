@@ -13,6 +13,7 @@
 
 @interface BSLApplication ()
 
+@property (nonatomic, strong)NSMutableArray *moduleArray;
 @property (nonatomic, strong)NSMutableDictionary *moduleDictionary;
 @property (nonatomic, strong)NSMutableDictionary *serviceDictionary;
 
@@ -20,6 +21,7 @@
 
 @implementation BSLApplication
 @synthesize uiApplication;
+@synthesize moduleArray;
 @synthesize moduleDictionary;
 @synthesize serviceDictionary;
 
@@ -31,6 +33,7 @@
     self = [super init];
     if (self){
         
+        self.moduleArray = [[NSMutableArray alloc] init];
         self.moduleDictionary = [[NSMutableDictionary alloc] init];
         self.serviceDictionary = [[NSMutableDictionary alloc] init];
         
@@ -44,7 +47,9 @@
             Class moduleClass = NSClassFromString(moduleName);
             BSLModule *m = [[moduleClass alloc] init];
             if (m != nil) {
+                m.name = [moduleJSON objectForKey:@"name"];
                 m.identifier = [moduleJSON objectForKey:@"identifier"];
+                [self.moduleArray addObject:m];
                 [self.moduleDictionary setValue:m forKey:m.identifier];
             } else {
                 NSLog(@"%@ not exists.", moduleName);
@@ -139,6 +144,11 @@
 -(BSLModule*)moduleForIdentifier:(NSString*)identifier
 {
     return [moduleDictionary objectForKey:identifier];
+}
+
+-(NSArray*)modules
+{
+    return self.moduleArray;
 }
 
 @end

@@ -7,10 +7,17 @@
 //
 
 #import "LocationModule.h"
+#import "LocationViewController.h"
+
+@interface LocationModule ()
+@property (nonatomic, strong)LocationViewController *locationViewController;
+
+@end
 
 
 @implementation LocationModule
 @synthesize locationManager;
+@synthesize locationViewController;
 
 -(BOOL)application:(BSLApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)options
 {
@@ -24,6 +31,10 @@
 //    [application registerService:self.locationManager WithIdentifier:@"locationManager"];
 //    
 //    [self.locationManager startUpdatingLocation];
+    
+    self.locationViewController = [[LocationViewController alloc] init];
+    self.locationViewController.title = @"Location";
+    self.viewController = self.locationViewController;
     
     return YES;
 }

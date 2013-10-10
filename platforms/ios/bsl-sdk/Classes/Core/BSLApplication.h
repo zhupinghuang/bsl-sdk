@@ -25,6 +25,8 @@
 //obtain a module
 -(BSLModule*)moduleForIdentifier:(NSString*)identifier;
 
+-(NSArray*)modules;
+
 @end
 
 
@@ -41,8 +43,8 @@
 @property(nonatomic, strong)NSString *identifier;
 @property(nonatomic, strong)NSString *name;
 
-//obtain the ViewController represent for this Module, can be nil
-@property(nonatomic, readonly)UIViewController *viewController;
+//the ViewController represent for this Module, can be nil
+@property(nonatomic, strong)UIViewController *viewController;
 
 #pragma mark - Module Lifecycle
 //this method will be called when the application finish launch, the module should initialize itself

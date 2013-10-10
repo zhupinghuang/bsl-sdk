@@ -45,6 +45,11 @@
 		5AA0E66F1729F460000DC89A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA0E66E1729F460000DC89A /* ImageIO.framework */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
+		D006789018064A080020365B /* ModulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D006788E18064A080020365B /* ModulesViewController.m */; };
+		D006789118064A080020365B /* ModulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D006788F18064A080020365B /* ModulesViewController.xib */; };
+		D0067898180659750020365B /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0067896180659750020365B /* LocationViewController.m */; };
+		D0067899180659750020365B /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0067897180659750020365B /* LocationViewController.xib */; };
+		D006789B18065A520020365B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D006789A18065A520020365B /* MapKit.framework */; };
 		D0857E0C18059D65003C96B5 /* bsl.json in Resources */ = {isa = PBXBuildFile; fileRef = D0857E0B18059D65003C96B5 /* bsl.json */; };
 		D0857E1318059D6F003C96B5 /* BSLApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = D0857E0F18059D6F003C96B5 /* BSLApplication.m */; };
 		D0857E1418059D6F003C96B5 /* LocationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D0857E1218059D6F003C96B5 /* LocationModule.m */; };
@@ -114,6 +119,13 @@
 		5AEE5B34173C68D80009041E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* bsl-sdk-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "bsl-sdk-Info.plist"; path = "../bsl-sdk-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D006788D18064A080020365B /* ModulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModulesViewController.h; sourceTree = "<group>"; };
+		D006788E18064A080020365B /* ModulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModulesViewController.m; sourceTree = "<group>"; };
+		D006788F18064A080020365B /* ModulesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModulesViewController.xib; sourceTree = "<group>"; };
+		D0067895180659750020365B /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		D0067896180659750020365B /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		D0067897180659750020365B /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
+		D006789A18065A520020365B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D0857E0B18059D65003C96B5 /* bsl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bsl.json; sourceTree = "<group>"; };
 		D0857E0E18059D6F003C96B5 /* BSLApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLApplication.h; sourceTree = "<group>"; };
 		D0857E0F18059D6F003C96B5 /* BSLApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLApplication.m; sourceTree = "<group>"; };
@@ -129,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D006789B18065A520020365B /* MapKit.framework in Frameworks */,
 				301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */,
 				5AA0E66F1729F460000DC89A /* ImageIO.framework in Frameworks */,
 				5AA0E66D1729F45B000DC89A /* OpenAL.framework in Frameworks */,
@@ -158,6 +171,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D006788C180649D30020365B /* SDK */,
 				D0857E0D18059D6F003C96B5 /* Core */,
 				D0857E1018059D6F003C96B5 /* Location */,
 				302D95EE14D2391D003F00A1 /* MainViewController.h */,
@@ -240,6 +254,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D006789A18065A520020365B /* MapKit.framework */,
 				5AEE5B34173C68D80009041E /* CoreLocation.framework */,
 				5AA0E66E1729F460000DC89A /* ImageIO.framework */,
 				5AA0E66C1729F45B000DC89A /* OpenAL.framework */,
@@ -320,6 +335,16 @@
 			path = se.lproj;
 			sourceTree = "<group>";
 		};
+		D006788C180649D30020365B /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				D006788D18064A080020365B /* ModulesViewController.h */,
+				D006788E18064A080020365B /* ModulesViewController.m */,
+				D006788F18064A080020365B /* ModulesViewController.xib */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
 		D0857E0D18059D6F003C96B5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +359,9 @@
 			children = (
 				D0857E1118059D6F003C96B5 /* LocationModule.h */,
 				D0857E1218059D6F003C96B5 /* LocationModule.m */,
+				D0067895180659750020365B /* LocationViewController.h */,
+				D0067896180659750020365B /* LocationViewController.m */,
+				D0067897180659750020365B /* LocationViewController.xib */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -417,9 +445,11 @@
 				F840E1F1165FE0F500CFE078 /* config.xml in Resources */,
 				308D05371370CCF300D202BF /* icon-72.png in Resources */,
 				308D05381370CCF300D202BF /* icon.png in Resources */,
+				D0067899180659750020365B /* LocationViewController.xib in Resources */,
 				308D05391370CCF300D202BF /* icon@2x.png in Resources */,
 				1F766FE113BBADB100FB74C0 /* Localizable.strings in Resources */,
 				1F766FE213BBADB100FB74C0 /* Localizable.strings in Resources */,
+				D006789118064A080020365B /* ModulesViewController.xib in Resources */,
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				30A0434814DC770100060A13 /* Localizable.strings in Resources */,
 				30A0434914DC770100060A13 /* Localizable.strings in Resources */,
@@ -489,7 +519,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D006789018064A080020365B /* ModulesViewController.m in Sources */,
 				D0857E1418059D6F003C96B5 /* LocationModule.m in Sources */,
+				D0067898180659750020365B /* LocationViewController.m in Sources */,
 				D0857E1318059D6F003C96B5 /* BSLApplication.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
