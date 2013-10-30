@@ -3,6 +3,7 @@
     "modules" : [
     {"identifier":"com.foreveross.bsl.im", "name": "IMModule"},
     {"identifier":"mocha.location", "name": "LocationModule"},
-    {"identifier":"mocha.share", "name": "ShareModule"}
+    {"identifier":"mocha.share", "name": "ShareModule"},
+    {"identifier":"mocha.debug", "name": "RemoteDebugerModule"}
     ]
 }

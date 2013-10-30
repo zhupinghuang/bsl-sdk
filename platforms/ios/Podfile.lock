@@ -8,6 +8,7 @@ PODS:
   - JSONKit (1.5pre)
   - MTStatusBarOverlay (0.9.1)
   - Reachability (3.0.0)
+  - SSZipArchive (0.3.1)
   - SVProgressHUD (0.9)
   - ZXingObjC (2.1.0)
 
@@ -17,16 +18,18 @@ DEPENDENCIES:
   - JSONKit (~> 1.5pre)
   - MTStatusBarOverlay (~> 0.9.1)
   - Reachability (~> 3.0.0)
+  - SSZipArchive (~> 0.3.1)
   - SVProgressHUD (~> 0.9)
   - ZXingObjC (~> 2.1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 7f9bcd7c287a75476cd5c61e82fd3380e93e4c54
-  FMDB: 8e5b7e0c644a13a70be0ec5dbffc6b30e524ab5d
+  FMDB: 3fd5aaf632ca4ed39e3f101e0398504e6d5b0918
   JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
   MTStatusBarOverlay: 2cee705996e4e307191d423bf49e583b9b2c14ac
   Reachability: 500bd76bf6cd8ff2c6fb715fc5f44ef6e4c024f2
+  SSZipArchive: 47d0589a15452311749a4eeecb97e12800d127de
   SVProgressHUD: 03d4845ec8e64591726428a08236c6a5489d45f8
   ZXingObjC: 71a249c43b0d8bd11fea6a7393a057e7e869b834
 
-COCOAPODS: 0.26.1
+COCOAPODS: 0.27.1

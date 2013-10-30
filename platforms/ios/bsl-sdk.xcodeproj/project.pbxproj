@@ -41,6 +41,13 @@
 		30A0434914DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434614DC770100060A13 /* Localizable.strings */; };
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
+		39318DB51820ED5E0080C8DF /* RemoteDebuggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39318DB41820ED5E0080C8DF /* RemoteDebuggerViewController.m */; };
+		39318DBF1820EF740080C8DF /* RemoteDebugerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 39318DBE1820EF740080C8DF /* RemoteDebugerModule.m */; };
+		39318DC51820F38B0080C8DF /* DownloadedAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = 39318DC21820F38B0080C8DF /* DownloadedAsync.m */; };
+		39318DC61820F38B0080C8DF /* ThreadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 39318DC41820F38B0080C8DF /* ThreadTask.m */; };
+		39318DCF1820FE550080C8DF /* CubeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39318DCE1820FE550080C8DF /* CubeWebViewController.m */; };
+		39318DD2182100EA0080C8DF /* NSFileManager+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 39318DD1182100EA0080C8DF /* NSFileManager+Extra.m */; };
+		39318DD7182101610080C8DF /* CubeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 39318DD6182101610080C8DF /* CubeModule.m */; };
 		5AA0E66D1729F45B000DC89A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA0E66C1729F45B000DC89A /* OpenAL.framework */; };
 		5AA0E66F1729F460000DC89A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA0E66E1729F460000DC89A /* ImageIO.framework */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
@@ -113,6 +120,20 @@
 		30E5649113A7FCAF007403D8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* bsl-sdk-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bsl-sdk-Prefix.pch"; sourceTree = "<group>"; };
+		39318DB31820ED5E0080C8DF /* RemoteDebuggerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteDebuggerViewController.h; sourceTree = "<group>"; };
+		39318DB41820ED5E0080C8DF /* RemoteDebuggerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteDebuggerViewController.m; sourceTree = "<group>"; };
+		39318DBD1820EF740080C8DF /* RemoteDebugerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteDebugerModule.h; sourceTree = "<group>"; };
+		39318DBE1820EF740080C8DF /* RemoteDebugerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteDebugerModule.m; sourceTree = "<group>"; };
+		39318DC11820F38B0080C8DF /* DownloadedAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadedAsync.h; sourceTree = "<group>"; };
+		39318DC21820F38B0080C8DF /* DownloadedAsync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadedAsync.m; sourceTree = "<group>"; };
+		39318DC31820F38B0080C8DF /* ThreadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadTask.h; sourceTree = "<group>"; };
+		39318DC41820F38B0080C8DF /* ThreadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadTask.m; sourceTree = "<group>"; };
+		39318DCD1820FE550080C8DF /* CubeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeWebViewController.h; sourceTree = "<group>"; };
+		39318DCE1820FE550080C8DF /* CubeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeWebViewController.m; sourceTree = "<group>"; };
+		39318DD0182100EA0080C8DF /* NSFileManager+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Extra.h"; sourceTree = "<group>"; };
+		39318DD1182100EA0080C8DF /* NSFileManager+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Extra.m"; sourceTree = "<group>"; };
+		39318DD5182101610080C8DF /* CubeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeModule.h; sourceTree = "<group>"; };
+		39318DD6182101610080C8DF /* CubeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeModule.m; sourceTree = "<group>"; };
 		42C2BF77A6094C739E01C669 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA0E66C1729F45B000DC89A /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		5AA0E66E1729F460000DC89A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -171,6 +192,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				39318DB21820ED5E0080C8DF /* RemoteDebugger */,
 				D006788C180649D30020365B /* SDK */,
 				D0857E0D18059D6F003C96B5 /* Core */,
 				D0857E1018059D6F003C96B5 /* Location */,
@@ -333,6 +355,43 @@
 				30A0434614DC770100060A13 /* Localizable.strings */,
 			);
 			path = se.lproj;
+			sourceTree = "<group>";
+		};
+		39318DB21820ED5E0080C8DF /* RemoteDebugger */ = {
+			isa = PBXGroup;
+			children = (
+				39318DD4182101610080C8DF /* Modules */,
+				39318DCD1820FE550080C8DF /* CubeWebViewController.h */,
+				39318DCE1820FE550080C8DF /* CubeWebViewController.m */,
+				39318DB31820ED5E0080C8DF /* RemoteDebuggerViewController.h */,
+				39318DB41820ED5E0080C8DF /* RemoteDebuggerViewController.m */,
+				39318DC01820F38B0080C8DF /* Utils */,
+				39318DBD1820EF740080C8DF /* RemoteDebugerModule.h */,
+				39318DBE1820EF740080C8DF /* RemoteDebugerModule.m */,
+			);
+			path = RemoteDebugger;
+			sourceTree = "<group>";
+		};
+		39318DC01820F38B0080C8DF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				39318DC11820F38B0080C8DF /* DownloadedAsync.h */,
+				39318DC21820F38B0080C8DF /* DownloadedAsync.m */,
+				39318DD0182100EA0080C8DF /* NSFileManager+Extra.h */,
+				39318DD1182100EA0080C8DF /* NSFileManager+Extra.m */,
+				39318DC31820F38B0080C8DF /* ThreadTask.h */,
+				39318DC41820F38B0080C8DF /* ThreadTask.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		39318DD4182101610080C8DF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				39318DD5182101610080C8DF /* CubeModule.h */,
+				39318DD6182101610080C8DF /* CubeModule.m */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		D006788C180649D30020365B /* SDK */ = {
@@ -520,10 +579,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D006789018064A080020365B /* ModulesViewController.m in Sources */,
+				39318DB51820ED5E0080C8DF /* RemoteDebuggerViewController.m in Sources */,
 				D0857E1418059D6F003C96B5 /* LocationModule.m in Sources */,
+				39318DCF1820FE550080C8DF /* CubeWebViewController.m in Sources */,
 				D0067898180659750020365B /* LocationViewController.m in Sources */,
 				D0857E1318059D6F003C96B5 /* BSLApplication.m in Sources */,
+				39318DD7182101610080C8DF /* CubeModule.m in Sources */,
+				39318DC61820F38B0080C8DF /* ThreadTask.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				39318DD2182100EA0080C8DF /* NSFileManager+Extra.m in Sources */,
+				39318DBF1820EF740080C8DF /* RemoteDebugerModule.m in Sources */,
+				39318DC51820F38B0080C8DF /* DownloadedAsync.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 			);
@@ -581,6 +647,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -602,6 +669,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bsl-sdk/bsl-sdk-Prefix.pch";
@@ -636,7 +704,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -678,7 +746,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,

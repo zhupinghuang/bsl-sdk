@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>56749200-ED73-42A3-B05D-F6653C0408E1</string>
+	<string>5FAEDED0-277F-480A-AEF8-A9A38A5BA1A3</string>
 	<key>IDESourceControlProjectName</key>
 	<string>bsl-sdk</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5EEBBA9A-395A-4B6A-98BC-41E9A1CD46C7</key>
-		<string>https://github.com/yezhiming/bsl-sdk.git</string>
+		<key>3939D4A8-08BC-4EA8-B949-886533AF137A</key>
+		<string>https://github.com/Fanty/bsl-sdk.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>platforms/ios/bsl-sdk.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5EEBBA9A-395A-4B6A-98BC-41E9A1CD46C7</key>
+		<key>3939D4A8-08BC-4EA8-B949-886533AF137A</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/yezhiming/bsl-sdk.git</string>
+	<string>https://github.com/Fanty/bsl-sdk.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5EEBBA9A-395A-4B6A-98BC-41E9A1CD46C7</string>
+	<string>3939D4A8-08BC-4EA8-B949-886533AF137A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5EEBBA9A-395A-4B6A-98BC-41E9A1CD46C7</string>
+			<string>3939D4A8-08BC-4EA8-B949-886533AF137A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>bsl-sdk</string>
 		</dict>
