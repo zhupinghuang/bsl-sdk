@@ -48,6 +48,14 @@
 		39318DCF1820FE550080C8DF /* CubeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39318DCE1820FE550080C8DF /* CubeWebViewController.m */; };
 		39318DD2182100EA0080C8DF /* NSFileManager+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 39318DD1182100EA0080C8DF /* NSFileManager+Extra.m */; };
 		39318DD7182101610080C8DF /* CubeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 39318DD6182101610080C8DF /* CubeModule.m */; };
+		397204A71839AB9200F4E206 /* NotificationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 397204A61839AB9200F4E206 /* NotificationModule.m */; };
+		397204AA1839ABC800F4E206 /* NotificationMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 397204A91839ABC800F4E206 /* NotificationMainViewController.m */; };
+		397204AE1839ACB200F4E206 /* HNAMobilePlatformService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397204AC1839ACB200F4E206 /* HNAMobilePlatformService.framework */; };
+		397204AF1839ACB300F4E206 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397204AD1839ACB200F4E206 /* IOKit.framework */; };
+		397204B11839ACFB00F4E206 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 397204B01839ACFB00F4E206 /* libxml2.dylib */; };
+		397204B31839AD0100F4E206 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 397204B21839AD0000F4E206 /* libz.1.2.5.dylib */; };
+		397204B51839AD1800F4E206 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397204B41839AD1800F4E206 /* CoreTelephony.framework */; };
+		397204B71839AD2100F4E206 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397204B61839AD2100F4E206 /* Security.framework */; };
 		5AA0E66D1729F45B000DC89A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA0E66C1729F45B000DC89A /* OpenAL.framework */; };
 		5AA0E66F1729F460000DC89A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA0E66E1729F460000DC89A /* ImageIO.framework */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
@@ -134,6 +142,16 @@
 		39318DD1182100EA0080C8DF /* NSFileManager+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Extra.m"; sourceTree = "<group>"; };
 		39318DD5182101610080C8DF /* CubeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeModule.h; sourceTree = "<group>"; };
 		39318DD6182101610080C8DF /* CubeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeModule.m; sourceTree = "<group>"; };
+		397204A51839AB9200F4E206 /* NotificationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationModule.h; sourceTree = "<group>"; };
+		397204A61839AB9200F4E206 /* NotificationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationModule.m; sourceTree = "<group>"; };
+		397204A81839ABC800F4E206 /* NotificationMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationMainViewController.h; sourceTree = "<group>"; };
+		397204A91839ABC800F4E206 /* NotificationMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationMainViewController.m; sourceTree = "<group>"; };
+		397204AC1839ACB200F4E206 /* HNAMobilePlatformService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HNAMobilePlatformService.framework; sourceTree = "<group>"; };
+		397204AD1839ACB200F4E206 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
+		397204B01839ACFB00F4E206 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		397204B21839AD0000F4E206 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		397204B41839AD1800F4E206 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		397204B61839AD2100F4E206 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		42C2BF77A6094C739E01C669 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA0E66C1729F45B000DC89A /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		5AA0E66E1729F460000DC89A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -162,6 +180,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301BF5BD109A6A2B0062928A /* CFNetwork.framework in Frameworks */,
+				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				397204B71839AD2100F4E206 /* Security.framework in Frameworks */,
+				397204B51839AD1800F4E206 /* CoreTelephony.framework in Frameworks */,
+				397204B31839AD0100F4E206 /* libz.1.2.5.dylib in Frameworks */,
+				397204B11839ACFB00F4E206 /* libxml2.dylib in Frameworks */,
+				397204AF1839ACB300F4E206 /* IOKit.framework in Frameworks */,
 				D006789B18065A520020365B /* MapKit.framework in Frameworks */,
 				301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */,
 				5AA0E66F1729F460000DC89A /* ImageIO.framework in Frameworks */,
@@ -175,11 +200,10 @@
 				301BF5B7109A6A2B0062928A /* AddressBookUI.framework in Frameworks */,
 				301BF5B9109A6A2B0062928A /* AudioToolbox.framework in Frameworks */,
 				301BF5BB109A6A2B0062928A /* AVFoundation.framework in Frameworks */,
-				301BF5BD109A6A2B0062928A /* CFNetwork.framework in Frameworks */,
 				301BF5C1109A6A2B0062928A /* MediaPlayer.framework in Frameworks */,
 				301BF5C3109A6A2B0062928A /* QuartzCore.framework in Frameworks */,
 				301BF5C5109A6A2B0062928A /* SystemConfiguration.framework in Frameworks */,
-				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				397204AE1839ACB200F4E206 /* HNAMobilePlatformService.framework in Frameworks */,
 				30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
 				29ECEBC66D5342FEB9229491 /* libPods.a in Frameworks */,
@@ -192,6 +216,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				397204A41839AB6500F4E206 /* Notification */,
 				39318DB21820ED5E0080C8DF /* RemoteDebugger */,
 				D006788C180649D30020365B /* SDK */,
 				D0857E0D18059D6F003C96B5 /* Core */,
@@ -233,6 +258,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				397204AB1839ACB200F4E206 /* Library */,
 				F840E1F0165FE0F500CFE078 /* config.xml */,
 				301BF56E109A69640062928A /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
@@ -276,6 +302,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				397204B61839AD2100F4E206 /* Security.framework */,
+				397204B41839AD1800F4E206 /* CoreTelephony.framework */,
+				397204B21839AD0000F4E206 /* libz.1.2.5.dylib */,
+				397204B01839ACFB00F4E206 /* libxml2.dylib */,
 				D006789A18065A520020365B /* MapKit.framework */,
 				5AEE5B34173C68D80009041E /* CoreLocation.framework */,
 				5AA0E66E1729F460000DC89A /* ImageIO.framework */,
@@ -392,6 +422,27 @@
 				39318DD6182101610080C8DF /* CubeModule.m */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		397204A41839AB6500F4E206 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				397204A51839AB9200F4E206 /* NotificationModule.h */,
+				397204A61839AB9200F4E206 /* NotificationModule.m */,
+				397204A81839ABC800F4E206 /* NotificationMainViewController.h */,
+				397204A91839ABC800F4E206 /* NotificationMainViewController.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		397204AB1839ACB200F4E206 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				397204AC1839ACB200F4E206 /* HNAMobilePlatformService.framework */,
+				397204AD1839ACB200F4E206 /* IOKit.framework */,
+			);
+			name = Library;
+			path = "bsl-sdk/Library";
 			sourceTree = "<group>";
 		};
 		D006788C180649D30020365B /* SDK */ = {
@@ -588,7 +639,9 @@
 				39318DC61820F38B0080C8DF /* ThreadTask.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				39318DD2182100EA0080C8DF /* NSFileManager+Extra.m in Sources */,
+				397204A71839AB9200F4E206 /* NotificationModule.m in Sources */,
 				39318DBF1820EF740080C8DF /* RemoteDebugerModule.m in Sources */,
+				397204AA1839ABC800F4E206 /* NotificationMainViewController.m in Sources */,
 				39318DC51820F38B0080C8DF /* DownloadedAsync.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
@@ -649,6 +702,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/fanty/Documents/project/bsl-sdk/platforms/ios/bsl-sdk/Library",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -671,6 +728,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/fanty/Documents/project/bsl-sdk/platforms/ios/bsl-sdk/Library",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bsl-sdk/bsl-sdk-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;

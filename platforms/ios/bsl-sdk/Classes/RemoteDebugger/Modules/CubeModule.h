@@ -62,31 +62,6 @@
 
 
 
-//maybe download, maybe just add online module
--(void)install;
--(BOOL)uninstall;
--(void)update;
-//download offline module
-
-
--(BOOL)moduleFileIsExit;
-
--(BOOL)moduleIsInstalled;
-
-#pragma mark Serialization & Deserialization
-
-//deserialize from json object to CubeModule object
-+(CubeModule*)moduleFromJSONObject:(id)jsonObject;
-
--(NSURL*)runtimeURL;
-
-//transfer this object to NSDictionary, for json serialization
--(NSMutableDictionary*)dictionary;
-
--(NSURL*)moduleDataDirectory;
-
--(NSString*)identifierWithBuild;
-
 @end
 
 extern NSString* const CubeModuleDownloadDidStartNotification;

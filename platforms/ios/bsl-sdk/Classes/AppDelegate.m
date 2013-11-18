@@ -32,12 +32,21 @@
 
 #import <Cordova/CDVPlugin.h>
 
+
+//HNA
+#import <HNAMobilePlatformService/HNAMobilePlatformService.h>
+
+/* 需要知道的事：
+ 1，证书需要打入至少两台的本地测试机  ，要开发者证书
+ 2，updateDeviceTokenForPushNotificationByAsychronous 的token 的传入是否正确
+ 3,  updateDeviceTokenForPushNotificationByAsychronous  与登陆是否需要分先后顺序
+*/
+
 @implementation AppDelegate
 
 @synthesize window, viewController;
 
-- (id)init
-{
+- (id)init{
     /** If you need to do any extra app-specific initialization, you can do it here
      *  -jm
      **/
@@ -96,9 +105,40 @@
     
     // init BSLModuleManager
     [[BSLApplication sharedApplication] application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    
+    //HNA   服务类SDK初始化
+    [HNAMobilePlatformService initializeWithLanguage:EKCHN];
+
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeBadge];
+
 
     return YES;
 }
+
+//HNA
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)_deviceToken{
+    
+    NSLog(@"application token did success");
+    if ([_deviceToken length]<1)
+        return;
+    
+    NSString *token = [[_deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    //HNA
+    [HNAMobilePlatformService updateDeviceTokenForPushNotificationByAsychronous:token withLanguage:@"CN"];
+    
+}
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+    NSLog(@"application token did failed:%@\n",error);
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+    
+}
+
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {

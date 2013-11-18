@@ -10,25 +10,9 @@
 #import <Cordova/CDVCommandDelegateImpl.h>
 typedef void (^DidFinishPreloadBlock)(void);
 typedef void (^DidErrorPreloadBlock)(void);
-@class CubeModule;
 @interface CubeWebViewController : CDVViewController <UIAlertViewDelegate>
 
-
-
-- (void)loadWebPageWithModule:(CubeModule *)module
-               didFinishBlock:(DidFinishPreloadBlock)didFinishBlock
-                didErrorBlock:(DidErrorPreloadBlock)didErrorBolock;
-- (void)loadWebPageWithModuleIdentifier:(NSString *)moduleIdentifier didFinishBlock:(DidFinishPreloadBlock)didFinishBlock didErrorBlock:(DidErrorPreloadBlock)didErrorBolock;
-- (void)loadRequest:(NSURLRequest*)request withFrame:(CGRect)frame didFinishBlock:(DidFinishPreloadBlock)didFinishBlock;
-
-
-- (void)loadRequest:(NSURLRequest*)request withFrame:(CGRect)frame didFinishBlock:(DidFinishPreloadBlock)didFinishBlock didErrorBlock:(DidErrorPreloadBlock)didErrorBolock;
-
-- (void)loadSettingPageWithModule:(CubeModule *)module didFinishBlock:(DidFinishPreloadBlock)didFinishBlock didErrorBlock:(DidErrorPreloadBlock)didErrorBolock;
-
 - (void)loadWebPageWithUrl:(NSString *)fileUrl didFinishBlock:(DidFinishPreloadBlock)didFinishBlock didErrorBlock:(DidErrorPreloadBlock)didErrorBolock;
-
-- (void)loadWebPageWithModule:(CubeModule *)module frame:(CGRect)frame didFinishBlock:(DidFinishPreloadBlock)didFinishBlock  didErrorBlock:(DidErrorPreloadBlock)didErrorBolock;
 
 @end
 
